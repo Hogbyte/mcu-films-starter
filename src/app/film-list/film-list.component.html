@@ -1,0 +1,22 @@
+<h1 [class.animate]="animateHeader">Marvel Cinematic Universe Films</h1>
+
+<table class="table table-striped" [class.animate]="animateTable">
+  <thead>
+    <tr>
+      <th>Phase</th>
+      <th>Name</th>
+      <th>US Release Date</th>
+      <th>US/Canada Box Office Gross</th>
+      <th>Metacritic</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let film of films">
+      <td>{{ film.phase }}</td>
+      <td>{{ film.name }}</td>
+      <td>{{ film.release }}</td>
+      <td>{{ film.gross }}</td>
+      <td>{{ film.metacritic }}</td>
+    <tr>
+  </tbody>
+</table>

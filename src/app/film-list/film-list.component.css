@@ -1,0 +1,36 @@
+h1.animate {
+    animation: headerEnter 2s linear forwards;
+}
+
+table.animate > tbody > tr:nth-child(odd) {
+    animation: enterLeft 200ms;
+}
+
+table.animate > tbody > tr:nth-child(even) {
+    animation: enterRight 200ms;
+}
+
+@keyframes headerEnter {
+    0% {
+        opacity: 0;
+        text-shadow: unset;
+    }
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 0 white;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 2px 2px 4px gray;
+    }
+}
+
+@keyframes enterLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes enterRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
