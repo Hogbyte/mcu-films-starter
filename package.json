@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ghp": "ng build --prod --output-path docs --base-href mcu-films-starter",
     "test": "ng test",
     "lint": "ng lint"
   },
