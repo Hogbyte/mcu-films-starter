@@ -10,7 +10,7 @@ import { FilmService, IFilm } from "../film.service";
 export class FilmListComponent implements OnInit {
   @Input() animateHeader: boolean = false;
   @Input() animateTable: boolean = false;
-  films: IFilm[] = null;;
+  films: IFilm[] = null;
 
   /**
    * Creates a new instance
